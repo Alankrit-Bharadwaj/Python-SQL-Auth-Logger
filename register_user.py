@@ -21,7 +21,6 @@ def register():
 
     hashed_password = hashlib.sha256(password.encode()).hexdigest()
 
-    # 3. Connect to the database
     conn = sqlite3.connect('auth_system.db')
     cursor = conn.cursor()
 
